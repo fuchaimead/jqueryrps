@@ -1,0 +1,11 @@
+.img {
+  display: flex;
+  flex-direction: row (default);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display {
+  padding-top: 50px;
+  text-align: center;
+}
