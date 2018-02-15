@@ -27,15 +27,15 @@ $(document).ready( function(){
         switch(computerChoice) {
           case "rock":
           tally.tie++
-          $("#winner").html = "IT WAS A TIE!"
+          $("#winner").html("IT WAS A TIE!")
           break;
           case "paper":
           tally.losses++ 
-          $("#winner").html = "YOU LOSE!"
+          $("#winner").html("YOU LOSE!")
           break;
           case "scissors":
           tally.wins++ 
-          $("#winner").html = "YOU WIN!"
+          $("#winner").html("YOU WIN!")
           break;
         }
         break;
@@ -43,15 +43,15 @@ $(document).ready( function(){
         switch(computerChoice) {
           case "rock":
           tally.win++
-          $("#winner").html = "YOU WIN!"
+          $("#winner").html("YOU WIN!")
           break;
           case "paper":
           tally.tie++ 
-          $("#winner").html= "IT WAS A TIE!"
+          $("#winner").html("IT WAS A TIE!")
           break;
           case "scissors":
           tally.losses++
-          $("#winner").html = "YOU LOSE!"
+          $("#winner").html("YOU LOSE!")
           break;
         }
         break;
@@ -59,24 +59,24 @@ $(document).ready( function(){
         switch(computerChoice) {
           case "rock":
           tally.losses++
-          $("#winner").html = "YOU LOSE!"
+          $("#winner").html("YOU LOSE!")
           break;
           case "paper":
           tally.wins++ 
-          $("#winner").html = "YOU WIN!"
+          $("#winner").html("YOU WIN!")
           break;
           case "scissors":
           tally.tie++
-          $("#winner").html = "IT WAS A TIE!"
+          $("#winner").html("IT WAS A TIE!")
           break;
         }      
       default:
     }
   
-  $("#computer").html = "The computer chose: " + computerChoice  
-  $("#youlose").html = "You have lost " + tally.losses + " games."
-  $("#youwin").html = "You have won " + tally.wins + " games."
-  $("#tie").html = "You tied " + tally.tie + " games."
+  $("#computer").html("The computer chose: " + computerChoice)
+  $("#youlose").html("You have lost " + tally.losses + " games.")
+  $("#youwin").html("You have won " + tally.wins + " games.")
+  $("#tie").html("You tied " + tally.tie + " games.")
   
   
   }
